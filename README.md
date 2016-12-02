@@ -4,8 +4,8 @@
 Problem:Should Count the number of words in a particular string
 
 #Lab Two:max_min.py
-problem:Should find the max and min numbers in a list
+Problem:Should find the max and min numbers in a list
 
 #Lab Three:weather_app.py
-problem:write command line application that consumes an api
-answer:Makes use of the open weather api
+Problem:Write command line application that consumes an api
+answer:Makes use of the open weather map
