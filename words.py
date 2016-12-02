@@ -7,19 +7,18 @@ def words(argument):
         #splits the string
         for word in argument.split():
             #checks if string is in word count already
-            if word in wordcount.keys():
-                if word == int:
-                    wordcount[word] += 1
+            if word.isdigit():
+                digit = int(word)
+                #checks if digit is in word count
+                if digit in wordcount:
+                    wordcount[digit] += 1
                 else:
-                    wordcount[word] += 1
+                    wordcount[digit] = 1
             else:
-                #store digit item as int
-                if word.isdigit():
-                    word = int(word)
-                    wordcount[word] = 1
+                #checks if digit is in word count
+                if word in wordcount:
+                    wordcount[word] += 1
                 else:
                     wordcount[word] = 1
         return wordcount
-    else:
-        return "please enter a string"
-
+print words("testing 1 2 1 3 1  testing")
