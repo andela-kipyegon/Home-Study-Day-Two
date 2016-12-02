@@ -1,13 +1,14 @@
 
 """Simple program that consumes open weather api and
-    return conitons for particular cities"""
+    return conditons for particular cities"""
 
+#global var for list of towns
 TOWNS = {1:"Nairobi", 2:"Mombasa", 3:"Kisumu", 4:"Kampala", 5:"Dodoma"}
 def main():
     """main fxn"""
     #import
     import requests
-    #cities GLOBAL VAR
+    
     #function for requests to api
     def weather(arg):
         """function which send a request"""
